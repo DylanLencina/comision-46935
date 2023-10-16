@@ -7,29 +7,18 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<header>
-    <div class="header-logo">
-        <a href="../index.html">
-            <img src="../assets/img/logo1.png" alt="logo marca de bolsa de compras">
-        </a>
-    </div>
-<!--barra de navegacion -->
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="./productos.html">productos</a></li>
+    <header class="header">
+        <div class="header-logo">
+            <img src="../assets/img/logo1.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./ayuda.html">ayuda</a></li>
+                <a href="../index.html"><img src="../assets/img/inicio-logo.png" alt=""></a>
+                <a href="#"><img src="../assets/img/carrito.png" alt=""></a>
+                <a href="./contactanos.html"><img src="../assets/img/correo.png" alt=""></a>
             </ul>
-                <form action="search">
-                    <label for="search"></label>
-                    <input type="search" name="" id="search">
-                </form>
-            <section>
-                <div>
-                    <a href="../index.html"><img src="../assets/img/inicio-logo.png" alt="logo incio"></a>
-                    <a href="./carrito.html"><img src="../assets/img/carrito.png" alt="logo carrito"></a>
-                    <a href="./contactanos.html"><img src="../assets/img/correo.png" alt=""></a>
-                </div>
-            </section>
         </nav>
     </header>
     <main class="main-carrito">
@@ -98,19 +87,17 @@
 
 <!-- footer  -->
 <footer>
-    <section class="footer">
-        <div><img src="../assets/img/logo1.png" alt="logo de la marca"></div>
-            <a href="./productos.html">¿como comprar?</a>
-            <a href="./ayuda.html">ayuda</a>
-            <a href="./contactanos.html">Contactanos</a>
-        <h3>calle falsa 123 buenos aires</h3>
-        <h3>17456011111</h3>
+    <img src="../assets/img/logo1.png" alt="logo de la marca" class="footer-logo">
         <div class="redes-sociales">
-            <a href="https://www.facebook.com/?locale=es_LA" ><img src="../assets/img/facebook.png" alt="icono facebook"></a>
-            <a href="https://www.instagram.com" ><img src="../assets/img/instagram.png" alt="icono instagram"></a>
-            <a href="https://twitter.com/home?lang=es" ><img src="../assets/img/twitter.png" alt="icono twitter"></a>
+            <a href="https://www.facebook.com/?locale=es_LA" class="footer-icono"></a>
+            <a href="https://www.instagram.com" class="footer-icono"></a>
+            <a href="https://twitter.com/home?lang=es" class="footer-icono"></a>
         </div>
-    </section>
+        <ul class="info-footer">
+            <a href="./productos.html" class="link-footer">¿como comprar?</a>
+            <a href="./ayuda.html" class="link-footer">ayuda</a>
+            <a href="./contactanos.html" class="link-footer">Contactanos</a>
+        </ul>
 </footer>
 </body>
 </html>
