@@ -123,36 +123,66 @@ header{
     box-shadow: 2px 2px 5px rgba(0, 0, 0,0);
 }
 /* main usuario */
-.main-usuario{
+.main-contactanos{
     background-color: #252640;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-contactanos form{
+    padding: 3.125rem 3.4375rem;
+    box-shadow: 0 0 1.25rem black;
+    border-radius: 1.25rem;
+    align-items: center;
+    width: 31.25rem;
+    background-color: #7F6DF2;
+
+}
+.contactanos-inputs{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.form-contactanos label {
+    height: .9375rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: .9375rem;
+}
+.form-contactanos input, textarea {
+    padding: 1.0625rem 1.5625rem;
+    border-radius: 1.5625rem;
+    margin-bottom: 1.25rem;
+    background-color: #62a2d975;
+    border: .125rem solid ;
+}
+.form-contactanos input::placeholder, textarea::placeholder{
+    color: black;
+}
+.texto-form{
+    margin-bottom: 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.texto-form a{
+    color: #252640;
+    font-size: .875rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.contactanos-boton{
+    font-size: 1rem;
+    color: #252640;
+    border: 0;
+    border-radius: 1.5625rem;
+    background-color:#62a2d975;
+    box-shadow: 0 0 1.25rem #62a2d956;
 }
 
-.form-usuario div{
-    width: 60%;
-    height: 30%;
-    background-color: #7F6DF2;
-    margin-top: 1.25rem;
-    padding-left: 2.5rem;
-}
-.form-usuario form{
-    font-size: 2.5rem;
-    width: 70%;
-    height: 800px;
-    text-align: justify;
-}
-.form-usuario input{
-    width: 18.75rem;
-    height: 1.875rem;
-}
-.form-usuario label br{
-    height: 2.1875rem;
-}
-.form-usuario div h1{
-    font-size: 2.5rem;
-    padding-bottom: 0;
-    border-bottom: 0;
-    margin-bottom: 0;
-}
+
+
 /* ayuda main */
 .main-ayuda{
     background-color: #62A1D9;
