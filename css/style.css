@@ -40,9 +40,11 @@ body{
     background-color: #7F6DF2;
 }
 .section-principal{
+    display: flex;
+    flex-direction: row-reverse;
     font-size: 1.5625rem;
     width: 100%;
-    height:25%;
+    height: 18.75rem;
     background-color: #62A1D9;
 }
 .section-principal div a{
@@ -50,24 +52,57 @@ body{
     color: #000;
     font-size: 1.5625rem;
 }
-.section-principal div img{
-    width: 25%;
-    height: 31.25rem;
+
+.section-principal button{
+    border-radius: 1.875rem;
+    border: #62A1D9;
+    box-shadow: #252640;
+    font-size: 1.5625rem;
+    background-color: #7f6df283;
+    margin: 60px;
+    padding: 1.25rem 1.875rem;
 }
-.index-banner div{
-    width: 50%;
-    }
-    .index-banner div img{
+.section-principal-imagenes{
+    display: flex;
+    flex-flow: row-reverse ;
+}
+.section-principal-imagenes .section-imagen{
+    width: 12.5rem;
+    height: 15.625rem;
+
+}
+
+.index-banner{
     width: 100%;
-    height: 21.875rem;
-    }
+    display: flex;
+    justify-content: space-around;
+    padding: 1.25rem;
+
+}
+.banner-imagen {
+    width: 18.75rem;
+    height: 18.75rem;
+}
+.banner-imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 .card{
     background-color: rgba(240, 248, 255, 0.507);
-        width: 21.875rem;
-        height:  25rem;
-        margin: 40px;
-        box-shadow: 2px 2px 5px grey;
-        text-align: center;
+    width: 15.625rem;
+    height: 25rem;
+    margin: 40px;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
 }
 .card div{
     width: 100%;
@@ -81,7 +116,22 @@ body{
 .card button a{
     text-decoration: none;
     color: #000;
+    font-size: 1.25rem;
+    padding: 1.25rem 1.25rem;
+}
+
+.card button{
+    border-radius: .9375rem;
+    border: #62A1D9;
+    box-shadow: #252640;
     font-size: 1.5625rem;
+    background-color: #7f6df283;
+}
+.info-contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .info-index{
     background-color: rgba(240, 248, 255, 0.507);
@@ -91,6 +141,19 @@ body{
     box-shadow: 2px 2px 5px grey;
     text-align: center;
 }
+.index-nosotros , .info-logo{
+    width: 100%;
+    height:21.875rem;
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-around;
+    background-color: #25264081;
+    text-align: left;
+}
+.index-nosotros h2{
+    font-size: 1.875rem;
+}
+
 /* footer global */
 footer{
     width: 100%;
@@ -147,37 +210,6 @@ footer{
     font-size: 1.125rem;
     text-decoration: none;
 }
-/* .footer a{
-    text-decoration: none;
-    color: #000;
-    font-size: 1.75rem;
-}
-.footer div{
-    width: 9.375rem;
-    height: 9.375rem;
-}
-.footer div img{
-    width: 100%;
-    height: 100%;
-} */
-/* .footer-logo{
-    width: 100%;
-    height: 100%;
-    width: 9.375rem;
-    height: 9.375rem;
-} */
-/* .redes-sociales a img{
-    font-size: 1.75rem;
-    text-decoration: none;
-    width: 3.75rem;
-    height: 3.75rem;
-    text-align: center;
-    line-height: 3.75rem;
-    background: #62A1D9;
-    border: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0,0);
-} */
-
 /* main usuario */
 .main-contactanos{
     background-color: #252640;
@@ -288,11 +320,11 @@ footer{
 }
 .productos-card{
     background-color: rgba(240, 248, 255, 0.507);
-        width: 15.625rem;
-        height: 25rem;
-        margin: 40px;
-        box-shadow: 2px 2px 5px grey;
-        text-align: center;
+    width: 15.625rem;
+    height: 25rem;
+    margin: 40px;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
 }
 .productos-card div{
     width: 100%;
@@ -303,15 +335,80 @@ footer{
     width: 100%;
     height: 100%;
 }
-.productos-carrucel{
-    background-color: rgba(240, 255, 255, 0.479);
-    margin-bottom: 2.5rem;
-}
-.productos-carrucel article{
+
+
+
+
+.carrousel{
     width: 100%;
-    height:900px;
 }
 
+.contenedor-carrousel{
+    width: 100%;
+    height: 18.75rem;
+    overflow: hidden;
+}
+
+.item-carrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.item-carrousel img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-carrousel-tarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.item-carrousel-flechas{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.item-carrousel-flechas i:hover {
+    cursor: pointer;
+}
+
+#item-carrousel-1{
+    background-color:#7F6DF2;
+}
+
+#item-carrousel-2{
+    background-color:#B86AD9;
+}
+
+#item-carrousel-3{
+    background-color: #62A1D9;
+}
+
+.contenedor-carrousel-controller{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor-carrousel-controller  a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.item-carrousel-flechasa  i{
+    color: white;
+}
 .catalogo-productos{
     background-color: rgb(240, 255, 255);
     margin-bottom: 2.5rem;
@@ -324,21 +421,47 @@ footer{
 .main-carrito{
     background-color: #B86AD9;
 }
-.productos-carrito{
+.carrito{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    border: solid black;
+    text-align: center;
     background-color: #62A1D9;
-    margin-bottom: 2.5rem;
+    grid-template-areas:
+    "item1 item4"
+    "item2 item5"
+    "item3 ."
+    ;
+}
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
 }
 .carrito-card{
     background-color: rgba(240, 248, 255, 0.507);
-        width: 37.5rem;
-        height: 25rem;
-        margin: 40px;
-        box-shadow: 2px 2px 5px grey;
-        text-align: left;
+    width: 15.625rem;
+    height:25rem;
+    margin: 40px;
+    box-shadow: 2px 2px 5px grey;
+    text-align: left;
+    padding: 1.25rem;
 }
 .carrito-card div{
-    width: 15.625rem;
-    height: 18.75rem;
+    width:12.5rem;
+    height: 15.625rem;
     object-fit: cover;
 }
 .carrito-card div img{
@@ -347,10 +470,10 @@ footer{
 }
 .carrito-box{
     background-color: rgb(240, 248, 255);
-        width: 37.5rem;
-        height: 25rem;
-        margin: 40px;
-        box-shadow: 2px 2px 5px grey;
+    width: 31.25rem;
+    height: 18.75rem;
+    margin: 40px;
+    box-shadow: 2px 2px 5px grey;
 }
 .carrito-box div h2{
     font-size: 2.5rem;
@@ -360,11 +483,17 @@ footer{
     font-size: 1.25rem;
     padding: .625rem;
 }
+.contenedor-boton{
+    width: 100%;
+    height: 18.75rem;
+    display: flex;
+
+}
 .carrito-boton button{
     width: 12.5rem;
     height: 120px;
     font-size: 1.25rem;
-    background-color: #62A1D9;
+    background-color: #7F6DF2;
     box-shadow: 2px 2px 5px grey;
     border-radius: 20%;
 }
@@ -372,4 +501,16 @@ footer{
     color: #000;
     text-decoration: none;
     font-size: 1.25rem;
+}
+.carrito-banner{
+    width: 100%;
+    height: 31.25rem;
+    display: flex;
+    justify-content: space-around;
+    margin: .625rem .625rem .625rem 1.25rem;
+}
+.carrito-banner img{
+    width: 100%;
+    height: 25rem;
+
 }
