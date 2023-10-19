@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
-    font-size: 1.25rem;
 }
 body{
     height: 100vh;
@@ -29,7 +28,6 @@ body{
     display: inline-block;
     padding: 0 1.25rem;
 }
-
 .header .nav-links a{
     font-size: 700;
     color: black;
@@ -52,7 +50,6 @@ body{
     color: #000;
     font-size: 1.5625rem;
 }
-
 .section-principal button{
     border-radius: 1.875rem;
     border: #62A1D9;
@@ -71,7 +68,6 @@ body{
     height: 15.625rem;
 
 }
-
 .index-banner{
     width: 100%;
     display: flex;
@@ -210,10 +206,9 @@ footer{
     font-size: 1.125rem;
     text-decoration: none;
 }
-/* main usuario */
+/* main contactanos */
 .main-contactanos{
     background-color: #252640;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,8 +264,6 @@ footer{
     box-shadow: 0 0 1.25rem #62a2d956;
 }
 
-
-
 /* ayuda main */
 .main-ayuda{
     background-color: #62A1D9;
@@ -302,7 +295,202 @@ footer{
     margin: 40px;
     box-shadow: 2px 2px 5px grey;
     text-align: center;
+    font-size: 1.875rem;
 }
+/* responsive ayuda*/
+@media(max-width:1024px){
+    .ayuda-ubicaciones{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    .ubicacion{
+    height: 12.5rem;
+    width: 12.5rem;
+    }
+    .ayuda-banner div{
+    width: 100%;
+    height: 31.25rem;
+    }
+    .ayuda-banner div img{
+        width: 100%;
+        height: 100%;
+    }
+    .info-contenedor{
+        height: 350px;
+    }
+    .info-ayuda p{
+        font-size: 1rem;
+    }
+    
+    /* responsive constactanos */
+    .form-contactanos h1{
+        text-align: center;
+    }
+}
+@media(max-width:768px){
+    .ayuda-ubicaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+    .ayuda-banner div{
+    width: 100%;
+    height: 18.75rem;
+    }
+    .ayuda-banner div img{
+    width: 100%;
+    height: 100%;
+    }
+    .info-contenedor .info-ayuda{
+    height: 15.625rem;
+    margin: .625rem;
+    }
+    .info-ayuda p{
+    font-size: 1rem;
+    }
+/* responsive constactanos */
+.main-contactanos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    justify-content: last baseline;
+}
+.contactanos-banner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 18.75rem;
+}
+.form-contactanos form{
+    padding: 3.125rem 3.4375rem;
+    box-shadow: 0 0 1.25rem black;
+    border-radius: 1.25rem;
+    align-items: center;
+    width: 25rem;
+    background-color: #7F6DF2;
+
+}
+}
+@media(max-width:425px){
+    .header-logo{
+        display: none;
+    }
+    .nav-links{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+        justify-content: space-around;
+        padding: 10px;
+        margin: .625rem;
+        align-items: center;
+    }
+    .nav-links ul li a{
+        font-size: .0625rem;
+    }
+    .nav-links img{
+    width: 2.5rem;
+    height: 2.5rem;
+    }
+    .info-contenedor .info-ayuda{
+        height: 12.5rem;
+    margin: .625rem .625rem .625rem 0 ;
+    }
+    .ayuda-banner div{
+        width: 100%;
+        height: 12.5rem;
+    }
+    .ayuda-banner div img{
+        width: 100%;
+        height: 100%;
+    }
+    .info-contenedor .info-ayuda{
+    height: 15.625rem;
+    margin-top: .625rem;
+    }
+    .info-ayuda p{
+        font-size: .875rem;
+    }
+    .info-ayuda h3{
+        font-size: 1rem;
+    }
+    .footer-icono{
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 1.875rem;
+    border: .0625rem solid #f2f2f2;
+    background-image: url(../assets/img/facebook.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-color: #62A1D9;
+    }
+    .link-footer{
+    margin: 0;
+    cursor: pointer;
+    list-style: none;
+    color: #000;
+    font-size: .9375rem;
+    text-decoration: none;
+}
+/* responsive contactanos */
+.header{
+    width: 100%;
+    height: 9.375rem;
+}
+
+.header-logo{
+    display: none;
+}
+.contactanos-banner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 25rem;
+    align-items: center;
+}
+.contactanos-banner img{
+    width: 80%;
+    height: 100%;
+}
+}
+
+@media(max-width:320px){
+    .header{
+        width: 100%;
+        height: 6.25rem;
+        /* font-size: 1rem; */
+}
+.contenedor-ubicacione{
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* responsive contactanos */
+.form-contactanos form{
+    padding: 3.125rem 3.4375rem;
+    box-shadow: 0 0 1.25rem black;
+    border-radius: 1.25rem;
+    align-items: self-end;
+    width: 18.75rem;
+    background-color: #7F6DF2;
+}
+.contactanos-banner div:nth-child(2){
+    width: 21.875rem;
+}
+.contactanos-banner img{
+    width:80%;
+    height: 100%;
+}
+}
+
 /* productos main */
 .main-productos{
     background-color: #252640;
@@ -335,10 +523,6 @@ footer{
     width: 100%;
     height: 100%;
 }
-
-
-
-
 .carrousel{
     width: 100%;
 }
